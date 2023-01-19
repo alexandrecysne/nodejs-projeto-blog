@@ -2,9 +2,9 @@
 Siga os passos abaixo para instalar e configurar um projeto blog, com bootstrap, nodejs, framework back-end express js, EJS Embedded JavaScript Templating, bibliotecas: body-parser, sequelize, slugify, tinyMCE, bcryptjs, express-session e mysql. componente: jumbotron. Sessões, Cookies e Autorização com Middleware.
 ***
 
-## Projeto Ask - Perguntas e respostas anônimas
+## Projeto Blog
 > http://localhost:8080
-* Projeto simples que vai permitir ao usuário criar perguntas, e para cada pergunta vai ser permitido também registrar todas as respostas. Exemplo do projeto ASKfm.
+* Projeto simples que vai permitir ao usuário criar categorias e artigos, criar usuários e senhas com hash, criando sessões, cookies e autorização com middleware.
 
 ## Softwares instalados
 1. Nodejs - https://nodejs.org
@@ -14,11 +14,17 @@ Siga os passos abaixo para instalar e configurar um projeto blog, com bootstrap,
 1. MySQL Banco de Dados - https://dev.mysql.com/downloads/mysql/
 1. MySQL Workbench - https://dev.mysql.com/downloads/workbench/
 
+## Bootstrap 4.5
+
 ## Bibliotecas instaladas
 1. nodemon
 1. EJS Embedded JavaScript Templating
 1. body-parser
 1. sequelize
+1. slugify
+1. tinyMCE
+1. bcryptjs
+1. express-session
 1. mysql
 
 ## Instalação do nodejs
@@ -52,7 +58,7 @@ Siga os passos abaixo para instalar e configurar um projeto blog, com bootstrap,
 * Você pode instalar o MySQL em um contêinere do Docker
 * Configuração do Mysql no arquivo database.js
 ```
-schema: ask
+schema: blog
 usuário: root
 senha: 123456
 host: localhost
