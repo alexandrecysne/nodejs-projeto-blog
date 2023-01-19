@@ -1,0 +1,36 @@
+<%- include('./partials/header.ejs')%>
+<%- include('./partials/navbarhome.ejs')%>
+<body>
+    <div class="container">
+        <hr>
+        <div class="jumbotron">
+            <h1 class="display-4">Bem-vindo</h1>
+            <p class="lead">Este é um simples blog</p>
+            <hr class="my-4">
+            <p>Projeto blog com bootstrap, nodejs, framework back-end express js, EJS Embedded JavaScript Templating, bibliotecas: body-parser, sequelize, slugify, tinyMCE, bcryptjs e mysql. componente: jumbotron. Sessões, Cookies e Autorização com Middleware.</p>
+            <a class="btn btn-primary btn-lg" href="/admin/users/create" role="button">Crie um usuário</a>
+          </div>        
+        <hr>
+        <% articles.forEach(article => { %>
+            <div class="card">
+                <div class="card-header">
+                    <h2><%= article.title %></h2>
+                </div>
+                <div class="card-body">
+                    <a href="/<%= article.slug %>" class="btn btn-success">Ler artigo</a>
+                </div>
+            </div>
+            <br>                          
+        <% }) %>
+
+        <div class="row">
+            <div class="col col-12">
+                <a style="float:right" href="/articles/page/1">Next >>></a>
+            </div>
+            <hr>
+        </div>
+        <hr>
+    </div>
+</body>
+
+<%- include('./partials/footer.ejs')%>
