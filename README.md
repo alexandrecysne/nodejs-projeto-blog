@@ -1,2 +1,2 @@
 # nodejs-projeto-blog
-Projeto blog com nodejs, framework back-end express js, EJS Embedded JavaScript Templating, biblioteca body-parser, sequelize, slugify e mysql.
+Projeto blog com bootstrap, nodejs, framework back-end express js, EJS Embedded JavaScript Templating, bibliotecas: body-parser, sequelize, slugify, tinyMCE, bcryptjs e mysql. componente: jumbotron. Sessões, Cookies e Autorização com Middleware.
